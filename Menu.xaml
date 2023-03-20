@@ -1,0 +1,20 @@
+﻿<Page
+    x:Class="Calculator.Menu"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Calculator"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Button Content="Maths Calculator" FontSize="32" Height="323" Margin="86,223,0,0" VerticalAlignment="Top" Width="587" Click="CalculatorClick"/>
+		<Button Content="Mortgage Calculator" FontSize="32" Height="323" Margin="843,217,0,0" VerticalAlignment="Top" Width="587" Click="MortgageCalculatorClick"/>
+		<Button Content="Currency Converter" FontSize="32" Height="323" Margin="86,597,0,0" VerticalAlignment="Top" Width="587" Click="CurrencyClick"/>
+		<Button Content="Exit" Height="323" FontSize="32" Margin="843,591,0,0" VerticalAlignment="Top" Width="587" Background="Red" Opacity="0.7"  Click="Exit"/>
+        <TextBlock HorizontalAlignment="Center" Margin="0,110,0,0" TextWrapping="Wrap" Text="Universal Calculator" FontSize="52" VerticalAlignment="Top" />
+        <Image HorizontalAlignment="Left" Source="Assets/abacus.PNG"  Height="200" Margin="1248,29,0,0" VerticalAlignment="Top" Width="200"/>
+
+    </Grid>
+</Page>
