@@ -30,7 +30,7 @@ namespace Calculator
 
 		private void MortgageCalculatorClick(object sender, RoutedEventArgs e)
 		{
-			this.Frame.Navigate(typeof(Menu));
+			this.Frame.Navigate(typeof(MortgageCalculatorPage));
 		}
 
 		private void CurrencyClick(object sender, RoutedEventArgs e)

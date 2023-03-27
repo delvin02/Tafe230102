@@ -26,5 +26,31 @@ namespace Calculator
 		{
 			this.InitializeComponent();
 		}
+
+		private void CalculateClick(object sender, RoutedEventArgs e)
+		{
+			try
+			{
+				double loanAmount = double.Parse(principalLoanAmount.Text);
+				int year = int.Parse(yearRepayment.Text);
+				int months = int.Parse(monthRepayment.Text) + year * 12;
+				double yearlyInterestRate = double.Parse(YearlyInterestRate.Text) / 100;
+				double monthlyInterestRate = yearlyInterestRate / 12;
+
+				MonthlyInterestRate.Text = monthlyInterestRate.ToString() + "%";
+
+				double formula = (Math.Pow((1 + monthlyInterestRate), months));
+				double repayment = Math.Round(loanAmount * ((monthlyInterestRate * formula) / (formula - 1 )), 2);
+				MonthlyRepayment.Text = repayment.ToString();
+			}
+			catch (FormatException)
+			{
+
+				Console.WriteLine("happy");
+
+			}
+		}
+
+
 	}
 }
