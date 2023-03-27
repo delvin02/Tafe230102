@@ -51,6 +51,9 @@ namespace Calculator
 			}
 		}
 
-
+		private void ExitToMenu(object sender, RoutedEventArgs e)
+		{
+			this.Frame.Navigate(typeof(Menu));
+		}
 	}
 }

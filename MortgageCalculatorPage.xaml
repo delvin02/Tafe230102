@@ -23,6 +23,6 @@
         <TextBlock TextWrapping="Wrap" Text="Monthly Repayment:" FontSize="20" VerticalAlignment="Top"  TextAlignment="Center" Margin="150,531,887,0" Height="26"/>
         <TextBox x:Name="MonthlyRepayment" TextWrapping="Wrap"   FontSize="20" VerticalAlignment="Top" Foreground="Blue" TextAlignment="Center" Margin="750,526,335,0" IsReadOnly="True" Height="38"/>
         <Button Content="Calculate" Margin="0,651,0,0" VerticalAlignment="Top" Height="55" Width="863" Click="CalculateClick" HorizontalAlignment="Center"/>
-        <Button Content="Exit" Margin="0,791,0,0" VerticalAlignment="Top" Height="98" Width="236" HorizontalAlignment="Center"/>
+        <Button Content="Exit" Margin="0,791,0,0" VerticalAlignment="Top" Height="98" Width="236" HorizontalAlignment="Center" Click="ExitToMenu"/>
     </Grid>
 </Page>
