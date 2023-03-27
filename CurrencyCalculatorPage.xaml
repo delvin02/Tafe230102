@@ -6,9 +6,33 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" FontSize="30">
 
     <Grid>
-
+        <TextBlock HorizontalAlignment="Left" Margin="137,77,0,0" Text="Currency Conversion Calculator" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="75" Width="1159" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" Margin="137,224,0,0" Text="Amount $" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="50"/>
+        <TextBlock HorizontalAlignment="Left" Margin="600,224,0,0" Text="From" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="50"/>
+        <TextBlock HorizontalAlignment="Left" Margin="1113,224,0,0" Text="To" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="50"/>
+        <TextBox x:Name="TextBoxAmount" HorizontalAlignment="Left" Height="69" Margin="91,329,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="310" FontSize="25"/>
+        <ComboBox x:Name="ComboBoxFrom" Margin="490,329,0,0" Width="399" Height="67" FontSize="25">
+            <ComboBoxItem Content="USD - US Dollar"/>
+            <ComboBoxItem Content="EU - Euro"/>
+            <ComboBoxItem Content="GBP - British"/>
+            <ComboBoxItem Content="INR - Indian Rupee"/>
+        </ComboBox>
+        <ComboBox x:Name="ComboBoxTo" Margin="978,329,0,0" Width="399" Height="67" FontSize="25">
+            <ComboBoxItem Content="USD - US Dollar"/>
+            <ComboBoxItem Content="EU - Euro"/>
+            <ComboBoxItem Content="GBP - British"/>
+            <ComboBoxItem Content="INR - Indian Rupee"/>
+        </ComboBox>
+        <TextBlock x:Name="TextBlockResult" HorizontalAlignment="Left" Height="132" Margin="96,564,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="1281" FontSize="60"/>
+        <Button x:Name="ButtonConversion" Content="Currency Conversion" Margin="490,720,0,0" VerticalAlignment="Top" Height="68" Width="442" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" FontSize="40" FontWeight="Bold" Click="ButtonConversion_Click">
+            <Button.RenderTransform>
+                <CompositeTransform Rotation="0.232"/>
+            </Button.RenderTransform>
+        </Button>
+        <Button x:Name="ButtonExit" Content="Exit" Margin="657,810,0,0" VerticalAlignment="Top" FontSize="40" Click="ButtonExit_Click"/>
+        <TextBlock x:Name="TextBlockIntro" HorizontalAlignment="Left" Height="48" Margin="91,467,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="1281" FontSize="25"/>
     </Grid>
 </Page>
