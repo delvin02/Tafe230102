@@ -9,6 +9,20 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-
+        <TextBlock HorizontalAlignment="Center" Margin="0,77,0,0" TextWrapping="Wrap" FontSize="60" FontWeight="Bold" Text="Mortgage Calculator" VerticalAlignment="Top" />
+        <TextBlock Text="Principal Borrow $:" FontSize="20" VerticalAlignment="Top" TextAlignment="Center" Foreground="Black" Margin="150,211,887,0" Height="26"/>
+        <TextBox TextWrapping="Wrap" PlaceholderText="Example: 10000"  FontSize="20" VerticalAlignment="Top"  TextAlignment="Center" Foreground="Black" Margin="750,205,335,0" Name="principalLoanAmount" Height="39"/>
+        <TextBlock TextWrapping="Wrap" Text="Years:" FontSize="20" VerticalAlignment="Top"  TextAlignment="Center" Margin="150,274,887,0" Height="26"/>
+        <TextBox TextWrapping="Wrap" PlaceholderText="Example: 30 for 30 years"  FontSize="20" VerticalAlignment="Top"  TextAlignment="Center" Margin="750,269,335,0" Name="yearRepayment" Height="38"/>
+        <TextBlock TextWrapping="Wrap" Text="And Months:" FontSize="20" VerticalAlignment="Top"  TextAlignment="Center" Margin="150,337,887,0" Height="26"/>
+		<TextBox TextWrapping="Wrap" PlaceholderText="Example: 10 for 10 months"  FontSize="20" VerticalAlignment="Top"  TextAlignment="Center" Margin="750,331,335,0" Name="monthRepayment" Height="39"/>
+        <TextBlock TextWrapping="Wrap" Text="Yearly Interest Rate:" FontSize="20" VerticalAlignment="Top"  TextAlignment="Center" Margin="150,404,887,0" Height="26"/>
+		<TextBox TextWrapping="Wrap" PlaceholderText="Example: 3.5 for 3.5%"  FontSize="20" VerticalAlignment="Top"  TextAlignment="Center" Margin="750,399,335,0" x:Name="YearlyInterestRate" Height="38"/>
+        <TextBlock TextWrapping="Wrap" Text="Monthly Interest Rate:" FontSize="20" VerticalAlignment="Top"  TextAlignment="Center" Margin="150,465,887,0" Height="26"/>
+        <TextBox TextWrapping="Wrap"  FontSize="20" VerticalAlignment="Top"  TextAlignment="Center" Foreground="Blue" Margin="750,459,335,0" Name="MonthlyInterestRate" IsReadOnly="True" Height="39"/>
+        <TextBlock TextWrapping="Wrap" Text="Monthly Repayment:" FontSize="20" VerticalAlignment="Top"  TextAlignment="Center" Margin="150,531,887,0" Height="26"/>
+        <TextBox x:Name="MonthlyRepayment" TextWrapping="Wrap"   FontSize="20" VerticalAlignment="Top" Foreground="Blue" TextAlignment="Center" Margin="750,526,335,0" IsReadOnly="True" Height="38"/>
+        <Button Content="Calculate" Margin="0,651,0,0" VerticalAlignment="Top" Height="55" Width="863" Click="CalculateClick" HorizontalAlignment="Center"/>
+        <Button Content="Exit" Margin="0,791,0,0" VerticalAlignment="Top" Height="98" Width="236" HorizontalAlignment="Center"/>
     </Grid>
 </Page>
