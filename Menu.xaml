@@ -9,12 +9,13 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <Button Content="Maths Calculator" FontSize="32" Height="323" Margin="86,223,0,0" VerticalAlignment="Top" Width="587" Click="CalculatorClick"/>
-		<Button Content="Mortgage Calculator" FontSize="32" Height="323" Margin="843,217,0,0" VerticalAlignment="Top" Width="587" Click="MortgageCalculatorClick"/>
-		<Button Content="Currency Converter" FontSize="32" Height="323" Margin="86,597,0,0" VerticalAlignment="Top" Width="587" Click="CurrencyClick"/>
-		<Button Content="Exit" Height="323" FontSize="32" Margin="843,591,0,0" VerticalAlignment="Top" Width="587" Background="Red" Opacity="0.7"  Click="Exit"/>
+        <Button Content="Maths Calculator" FontSize="32" Height="213" Margin="86,223,0,0" VerticalAlignment="Top" Width="391" Click="CalculatorClick" RenderTransformOrigin="0.502,0.48"/>
+        <Button Content="Mortgage Calculator" FontSize="32" Height="219" Margin="1004,217,0,0" VerticalAlignment="Top" Width="426" Click="MortgageCalculatorClick"/>
+        <Button Content="Currency Converter" FontSize="32" Height="243" Margin="86,677,0,0" VerticalAlignment="Top" Width="391" Click="CurrencyClick"/>
+        <Button Content="Exit" Height="210" FontSize="32" Margin="1004,704,0,0" VerticalAlignment="Top" Width="426" Background="Red" Opacity="0.7"  Click="Exit"/>
         <TextBlock HorizontalAlignment="Center" Margin="0,110,0,0" TextWrapping="Wrap" Text="Universal Calculator" FontSize="52" VerticalAlignment="Top" />
         <Image HorizontalAlignment="Left" Source="Assets/abacus.PNG"  Height="200" Margin="1248,29,0,0" VerticalAlignment="Top" Width="200"/>
+        <Button Content="Trip Calculator" FontSize="32" Height="207" Margin="0,468,0,0" VerticalAlignment="Top" Width="363" Click="CalculatorClick" RenderTransformOrigin="0.502,0.48" HorizontalAlignment="Center"/>
 
     </Grid>
 </Page>
